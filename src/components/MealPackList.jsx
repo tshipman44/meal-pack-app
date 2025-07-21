@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import { recipeImages } from '../assets/images'; // Import our image mapper
+import mealPacksCsvPath from '../assets/mealpacks.csv'; // <-- 1. Import the CSV
+
 
 export default function MealPackList() {
   const [mealPacks, setMealPacks] = useState([]);
