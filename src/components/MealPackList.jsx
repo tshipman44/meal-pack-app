@@ -1,40 +1,11 @@
 import React, { useState } from 'react';
 import { recipeImages } from '../assets/images';
-import rawData from '../assets/mealpacks.csv'; // We will now use this!
+import initialMealPacks from '../assets/mealpacks.json';
 
-// This helper function takes the raw data and groups it into packs
-const groupRecipesIntoPacks = (data) => {
-  const packs = data.reduce((acc, row) => {
-    // Skip any empty or invalid rows from the CSV
-    if (!row.meal_pack_id) return acc;
-    
-    // Create the meal pack if it doesn't exist yet
-    acc[row.meal_pack_id] = acc[row.meal_pack_id] || {
-      id: row.meal_pack_id,
-      name: row.meal_pack_name,
-      shopping_list_url: row.shopping_list_url,
-      recipes: []
-    };
-    
-    // Add the current recipe to its pack
-    acc[row.meal_pack_id].recipes.push({
-      name: row.recipe_name,
-      url: row.recipe_url,
-      image_id: row.image_id
-    });
-    
-    return acc;
-  }, {});
-  
-  // Return the packs as an array
-  return Object.values(packs);
-};
 
 export default function MealPackList() {
-  // Set the state directly with the processed data. No fetching needed!
-  const [mealPacks] = useState(groupRecipesIntoPacks(rawData));
+  const [mealPacks] = useState(initialMealPacks);
 
-  // Since the data is available immediately, we don't need a "loading" state.
 
   return (
     <div className="p-8">
