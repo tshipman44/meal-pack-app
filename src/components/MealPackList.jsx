@@ -5,36 +5,52 @@ import initialMealPacks from '../assets/mealpacks.json';
 export default function MealPackList() {
   const [mealPacks] = useState(initialMealPacks);
 
+  // An array of size classes to apply to the tiles.
+  // This pattern will repeat for every 5 items.
+  const sizeClasses = [
+    'col-span-2 row-span-2', // Large
+    'col-span-1 row-span-1', // Small
+    'col-span-1 row-span-1', // Small
+    'col-span-1 row-span-2', // Tall
+    'col-span-2 row-span-1', // Wide
+  ];
+
   return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold mb-4 text-slate-800">Meal Packs</h1>
-      <p className="text-lg text-slate-600 mb-8">Choose a pack to see the shopping list and recipes.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {mealPacks.map((pack) => (
-          <div key={pack.id} className="md:col-span-1 lg:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
-            <div className="p-6">
-              {/* Only render the name if the pack and name exist */}
-              <h2 className="text-2xl font-bold text-slate-700 mb-2">{pack?.name}</h2>
-              <div className="flex -space-x-4 mb-4">
-                {/* This is the key change: (pack.recipes || []).map()
-                  It defaults to an empty array if pack.recipes doesn't exist, preventing the crash.
-                */}
-                {(pack.recipes || []).map((recipe, index) => (
-                  <img
-                    key={index}
-                    src={recipeImages[recipe.image_id]}
-                    alt={recipe.name}
-                    className="w-16 h-16 rounded-full border-4 border-white object-cover shadow-md"
-                  />
-                ))}
-              </div>
+    <div className="p-4 md:p-8">
+      <h1 className="text-4xl font-bold mb-2 text-slate-800">Meal Packs</h1>
+      <p className="text-lg text-slate-600 mb-8">Choose a pack to start planning.</p>
+      
+      {/* Use a tighter gap and define row heights */}
+      <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] gap-3">
+        {mealPacks.map((pack, index) => (
+          // The main tile container
+          <div 
+            key={pack.id} 
+            // Apply a repeating size class and set up for the new layout
+            className={`group relative rounded-xl overflow-hidden shadow-lg ${sizeClasses[index % sizeClasses.length]}`}
+          >
+            {/* 1. Background Image */}
+            <img
+              src={recipeImages[pack.recipes[0].image_id]}
+              alt={pack.name}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+            />
+            {/* 2. Dark Overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10"></div>
+            
+            {/* 3. Content container */}
+            <div className="relative flex flex-col h-full p-4 text-white">
+              <h2 className="text-2xl font-bold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
+                {pack.name}
+              </h2>
               <a 
                 href={pack.shopping_list_url} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-block bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors"
+                // Use flexbox utilities to push to the bottom-right
+                className="mt-auto ml-auto bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors text-sm"
               >
-                🛒 View Shopping List
+                Shopping List
               </a>
             </div>
           </div>
