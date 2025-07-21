@@ -3,7 +3,7 @@
 // Import all your images
 import mealpack1_r1 from './mealpack1_r1.webp';
 import mealpack1_r2 from './mealpack1_r2.webp';
-import mealpack1_r3 from './mealpack1_r3.jpg';
+import mealpack1_r3 from './mealpack1_r3.jpeg';
 import mealpack2_r1 from './mealpack2_r1.webp';
 import mealpack2_r2 from './mealpack2_r2.webp';
 import mealpack2_r3 from './mealpack2_r3.jpg';
