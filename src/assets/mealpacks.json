@@ -2,12 +2,12 @@
   {
     "id": "1",
     "name": "1 Chickpea Classics",
-    "shopping_list_url": "", // Add a link to the shopping list here
+    "shopping_list_url": "",
     "recipes": [
       {
         "name": "Pasta e Ceci",
         "url": "https://www.seriouseats.com/pasta-e-ceci-pasta-with-chickpeas (Serious Eats)",
-        "image_id": "mealpack1_r1" 
+        "image_id": "mealpack1_r1"
       },
       {
         "name": "Pasta with Vegan Chickpea Sauce",
@@ -18,6 +18,314 @@
         "name": "Slow-Cooker Chickpea Curry",
         "url": "https://www.tamingtwins.com/slow-cooker-chickpea-curry/ (Taming Twins)",
         "image_id": "mealpack1_r3"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "2 Black-Bean Fiesta",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Veggie Enchilada Casserole",
+        "url": "https://cookieandkate.com/vegetarian-enchilada-casserole-recipe/ (Cookie and Kate)",
+        "image_id": "mealpack2_r1"
+      },
+      {
+        "name": "Cheesy Black-Bean & Quinoa Skillet",
+        "url": "https://www.eatingwell.com/recipe/8001456/cheesy-black-bean-quinoa-skillet-casserole/ (EatingWell)",
+        "image_id": "mealpack2_r2"
+      },
+      {
+        "name": "Black-Bean & Cheese Quesadilla Bake",
+        "url": "https://aggieskitchen.com/oven-baked-black-bean-and-cheese-quesadillas/ (Aggie's Kitchen)",
+        "image_id": "mealpack2_r3"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "3 Spinach-Greens Week",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Spinach & Feta Rice Casserole",
+        "url": "https://www.eatingwell.com/recipe/280864/spinach-feta-rice-casserole/ (EatingWell)",
+        "image_id": "mealpack3_r1"
+      },
+      {
+        "name": "Creamy Mushroom-Spinach Pasta",
+        "url": "https://www.bbcgoodfood.com/recipes/creamy-mushroom-spinach-pasta (Good Food)",
+        "image_id": "mealpack3_r2"
+      },
+      {
+        "name": "Veggie Lasagne (slow-cooker)",
+        "url": "https://themodernproper.com/crockpot-vegetable-lasagna (The Modern Proper)",
+        "image_id": "mealpack3_r3"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "4 Lentil Comfort Pack",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Vegetarian Sloppy Joes",
+        "url": "https://www.allrecipes.com/recipe/278783/vegan-sloppy-joes/ (Allrecipes)",
+        "image_id": "mealpack4_r1"
+      },
+      {
+        "name": "Vegetarian Shepherd’s Pie",
+        "url": "https://www.eatingwell.com/recipe/250343/vegetarian-shepherds-pies/ (EatingWell)",
+        "image_id": "mealpack4_r2"
+      },
+      {
+        "name": "Vegetarian Pastitsio (slow-cooker)",
+        "url": "https://bakingqueen74.co.uk/slow-cooker-pastitsio/ (BakingQueen74)",
+        "image_id": "mealpack4_r3"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "5 Mushroom Medley",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Mushroom Pot Pie",
+        "url": "https://www.seriouseats.com/mushroom-pot-pie-recipe-8721453 (Serious Eats)",
+        "image_id": "mealpack5_r1"
+      },
+      {
+        "name": "Wild-Mushroom Mac & Cheese",
+        "url": "https://www.bbcgoodfood.com/recipes/wild-mushroom-mac-n-cheese (Good Food)",
+        "image_id": "mealpack5_r2"
+      },
+      {
+        "name": "Mushroom-Spinach-Sun-Dried-Tomato Rigatoni",
+        "url": "https://www.theguardian.com/food/2024/nov/19/mushroom-rigatoni-spinach-sun-dried-tomato-recipe-georgina-hayden (The Guardian)",
+        "image_id": "mealpack5_r3"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "6 Cauliflower Creations",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Sheet-Pan Cauliflower & Tofu",
+        "url": "https://www.seriouseats.com/sheet-pan-cauliflower-tofu-recipe (Serious Eats)",
+        "image_id": "mealpack6_r1"
+      },
+      {
+        "name": "Cheesy Cauli-Spinach Pasta Bake",
+        "url": "https://www.bbcgoodfood.com/recipes/cauliflower-cheese-spinach-pasta-bakes (Good Food)",
+        "image_id": "mealpack6_r2"
+      },
+      {
+        "name": "Cauli-Cheese Macaroni",
+        "url": "https://www.bbcgoodfood.com/recipes/cauliflower-macaroni-cheese (Good Food)",
+        "image_id": "mealpack6_r3"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "7 Sweet-Potato Trio",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Sweet-Potato-&-Black-Bean Chili",
+        "url": "https://www.eatingwell.com/recipe/250222/sweet-potato-black-bean-chili/ (EatingWell)",
+        "image_id": "mealpack7_r1"
+      },
+      {
+        "name": "Sweet-Potato Latkes",
+        "url": "https://www.seriouseats.com/sweet-potato-latkes-recipe-8757869 (Serious Eats)",
+        "image_id": "mealpack7_r2"
+      },
+      {
+        "name": "Sweet-Potato Gnocchi with Tomato Sauce",
+        "url": "https://www.bbcgoodfood.com/recipes/sweet-potato-gnocchi-with-tomato-sauce (Good Food)",
+        "image_id": "mealpack7_r3"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "8 Broccoli Bonanza",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Veggie Casserole (Weelicious)",
+        "url": "https://weelicious.com/veggie-casserole/ (Weelicious)",
+        "image_id": "mealpack8_r1"
+      },
+      {
+        "name": "Cheesy Broccoli Pasta Bake",
+        "url": "https://www.bbcgoodfood.com/recipes/cheesy-broccoli-pasta-bake (Good Food)",
+        "image_id": "mealpack8_r2"
+      },
+      {
+        "name": "Broccoli-Cheese Whole-Wheat Bake",
+        "url": "https://www.bbcgoodfood.com/recipes/broccoli-cheese-with-wholemeal-pasta-brown-breadcrumbs (Good Food)",
+        "image_id": "mealpack8_r3"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "9 Courgette/Zucchini Variety",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Sweetcorn-&-Courgette Fritters",
+        "url": "https://www.bbcgoodfood.com/recipes/sweetcorn-courgette-fritters (Good Food)",
+        "image_id": "mealpack9_r1"
+      },
+      {
+        "name": "Spinach-&-Courgette Lasagne",
+        "url": "https://www.bbcgoodfood.com/recipes/spinach-courgette-lasagne (Good Food)",
+        "image_id": "mealpack9_r2"
+      },
+      {
+        "name": "Grilled Pasta Primavera",
+        "url": "https://www.seriouseats.com/grilled-pasta-primavera (Serious Eats)",
+        "image_id": "mealpack9_r3"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "10 Butternut-Squash Comforts",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Pasta with Butternut-Sage Brown-Butter",
+        "url": "https://www.seriouseats.com/pasta-butternut-squash-sage-brown-butter-recipe (Serious Eats)",
+        "image_id": "mealpack10_r1"
+      },
+      {
+        "name": "Butternut-Squash Mac & Cheese",
+        "url": "https://www.seriouseats.com/butternut-squash-mac-and-cheese-recipe-8747696 (Serious Eats)",
+        "image_id": "mealpack10_r2"
+      },
+      {
+        "name": "Tomato-&-Mozzarella Spaghetti Bake",
+        "url": "https://www.bbcgoodfood.com/recipes/tomato-mozzarella-spaghetti-bake (Good Food)",
+        "image_id": "mealpack10_r3"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "11 Hidden-Veg Pasta Sauces",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Pasta with Tomato & Hidden-Veg Sauce",
+        "url": "https://www.bbcgoodfood.com/recipes/pasta-tomato-hidden-veg-sauce (Good Food)",
+        "image_id": "mealpack11_r1"
+      },
+      {
+        "name": "Super-Veg Pasta",
+        "url": "https://www.bbcgoodfood.com/recipes/super-veg-pasta (Good Food)",
+        "image_id": "mealpack11_r2"
+      },
+      {
+        "name": "Pasta al Sugo Finto",
+        "url": "https://www.seriouseats.com/sugo-finto-tuscan-vegetable-ragu (Serious Eats)",
+        "image_id": "mealpack11_r3"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "12 Cherry-Tomato Caprese",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Creamy Pasta Bake with Cherry Tomatoes & Basil",
+        "url": "https://www.allrecipes.com/recipe/261148/creamy-pasta-bake-with-cherry-tomatoes-and-basil/ (Allrecipes)",
+        "image_id": "mealpack12_r1"
+      },
+      {
+        "name": "Slow-Cooker Feta & Tomato Pasta",
+        "url": "https://www.tamingtwins.com/feta-and-tomato-pasta/ (Taming Twins)",
+        "image_id": "mealpack12_r2"
+      },
+      {
+        "name": "Cherry-Tomato & Ricotta Cavatappi",
+        "url": "https://www.bbcgoodfood.com/recipes/cherry-tomato-ricotta-cavatappi (Good Food)",
+        "image_id": "mealpack12_r3"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "13 Mediterranean Eggplant Week",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Vegetarian Baked Ziti",
+        "url": "https://www.allrecipes.com/recipe/282841/vegetarian-baked-ziti/ (Allrecipes)",
+        "image_id": "mealpack13_r1"
+      },
+      {
+        "name": "Aubergine-&-Goat’s-Cheese Pasta",
+        "url": "https://www.bbcgoodfood.com/recipes/aubergine-goats-cheese-pasta (Good Food)",
+        "image_id": "mealpack13_r2"
+      },
+      {
+        "name": "Silvana’s Mediterranean Basil Pasta",
+        "url": "https://www.bbcgoodfood.com/recipes/silvanas-mediterranean-basil-pasta (Good Food)",
+        "image_id": "mealpack13_r3"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "14 Cheesy Pantry Bakes",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Vegetarian Baked Pasta",
+        "url": "https://www.allrecipes.com/recipe/19369/vegetarian-baked-pasta/ (Allrecipes)",
+        "image_id": "mealpack14_r1"
+      },
+      {
+        "name": "Rotini Pasta Bake",
+        "url": "https://www.allrecipes.com/recipe/11939/rotini-pasta-bake/ (Allrecipes)",
+        "image_id": "mealpack14_r2"
+      },
+      {
+        "name": "Easy Vegetable Pasta Bake",
+        "url": "https://www.inspiredtaste.net/40176/vegetable-baked-pasta/ (Inspired Taste)",
+        "image_id": "mealpack14_r3"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "15 Soup-Night Sampler",
+    "shopping_list_url": "",
+    "recipes": [
+      {
+        "name": "Vegetable Noodle Soup",
+        "url": "https://myminichefs.com/vegetable-noodle-soup/ (My Mini Chefs)",
+        "image_id": "mealpack15_r1"
+      },
+      {
+        "name": "Extra-Veggie Minestrone",
+        "url": "https://www.yummytoddlerfood.com/minestrone-baby-soup/ (Yummy Toddler Food)",
+        "image_id": "mealpack15_r2"
+      },
+      {
+        "name": "Creamy Cauliflower Soup",
+        "url": "https://www.momtastic.com/recipes/vegetarian/175847-cauliflower-parmesan-soup-recipe/ (Momtastic)",
+        "image_id": "mealpack15_r3"
       }
     ]
   }
