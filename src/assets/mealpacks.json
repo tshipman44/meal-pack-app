@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "1 Chickpea Classics",
+    "shopping_list_url": "", // Add a link to the shopping list here
+    "recipes": [
+      {
+        "name": "Pasta e Ceci",
+        "url": "https://www.seriouseats.com/pasta-e-ceci-pasta-with-chickpeas (Serious Eats)",
+        "image_id": "mealpack1_r1" 
+      },
+      {
+        "name": "Pasta with Vegan Chickpea Sauce",
+        "url": "https://www.seriouseats.com/pasta-chickpea-sauce-recipe (Serious Eats)",
+        "image_id": "mealpack1_r2"
+      },
+      {
+        "name": "Slow-Cooker Chickpea Curry",
+        "url": "https://www.tamingtwins.com/slow-cooker-chickpea-curry/ (Taming Twins)",
+        "image_id": "mealpack1_r3"
+      }
+    ]
+  }
+]

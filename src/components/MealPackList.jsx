@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import { recipeImages } from '../assets/images';
 import initialMealPacks from '../assets/mealpacks.json';
 
-
 export default function MealPackList() {
   const [mealPacks] = useState(initialMealPacks);
-
 
   return (
     <div className="p-8">
       <h1 className="text-4xl font-bold mb-4 text-slate-800">Meal Packs</h1>
       <p className="text-lg text-slate-600 mb-8">Choose a pack to see the shopping list and recipes.</p>
-
-      {/* Bento Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {mealPacks.map((pack) => (
           <div key={pack.id} className="md:col-span-1 lg:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-slate-700 mb-2">{pack.name}</h2>
+              {/* Only render the name if the pack and name exist */}
+              <h2 className="text-2xl font-bold text-slate-700 mb-2">{pack?.name}</h2>
               <div className="flex -space-x-4 mb-4">
-                {pack.recipes.map((recipe, index) => (
+                {/* This is the key change: (pack.recipes || []).map()
+                  It defaults to an empty array if pack.recipes doesn't exist, preventing the crash.
+                */}
+                {(pack.recipes || []).map((recipe, index) => (
                   <img
                     key={index}
                     src={recipeImages[recipe.image_id]}
