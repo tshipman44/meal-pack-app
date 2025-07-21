@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { recipeImages } from '../assets/images';
 import initialMealPacks from '../assets/mealpacks.json';
-import ShoppingListModal from './ShoppingListModal'; // Import the new modal component
+import ShoppingListModal from './ShoppingListModal';
 
 export default function MealPackList() {
   const [mealPacks] = useState(initialMealPacks);
-  
-  // State for managing the modal
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPack, setSelectedPack] = useState(null);
 
-  // Handlers to open and close the modal
-  const handleOpenModal = (pack) => {
+  const handleOpenModal = (e, pack) => {
+    e.preventDefault(); // Prevent navigation when clicking the button
     setSelectedPack(pack);
     setIsModalOpen(true);
   };
@@ -36,7 +35,9 @@ export default function MealPackList() {
       
       <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] gap-3 grid-flow-dense">
         {mealPacks.map((pack, index) => (
-          <div 
+          // Wrap the entire tile in a Link component
+          <Link
+            to={`/mealpack/${pack.id}`}
             key={pack.id} 
             className={`group relative rounded-xl overflow-hidden shadow-lg ${sizeClasses[index % sizeClasses.length]}`}
           >
@@ -51,19 +52,17 @@ export default function MealPackList() {
               <h2 className="text-xl md:text-2xl font-bold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
                 {pack.name}
               </h2>
-              {/* This is now a button that opens the modal */}
               <button
-                onClick={() => handleOpenModal(pack)}
-                className="mt-auto ml-auto bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors text-sm"
+                onClick={(e) => handleOpenModal(e, pack)}
+                className="mt-auto ml-auto bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-600 transition-colors text-sm z-10"
               >
                 Shopping List
               </button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
-      {/* Conditionally render the modal outside of the grid */}
       {isModalOpen && <ShoppingListModal pack={selectedPack} onClose={handleCloseModal} />}
     </div>
   );
